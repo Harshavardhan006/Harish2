@@ -75,3 +75,19 @@ def searchInsert(nums,target):
 nums=[1,3,5,6]
 target=5
 print(searchInsert(nums,target))
+#Median of Two sorted Array
+def findMedianSortedArrays(nums1,nums2):
+    nums1.extend(nums2)
+    nums1.sort()
+    n = len(nums1)
+    if n % 2 == 0:
+        x = n // 2
+        sum = (nums1[x] + nums1[x - 1]) / 2
+        return sum
+    else:
+        x = n // 2
+        sum = nums1[x]
+        return sum
+nums1 = [1,3]
+nums2 = [2]
+print(findMedianSortedArrays(nums1,nums2))
