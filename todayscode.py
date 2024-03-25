@@ -91,3 +91,15 @@ def findMedianSortedArrays(nums1,nums2):
 nums1 = [1,3]
 nums2 = [2]
 print(findMedianSortedArrays(nums1,nums2))
+#Climbing Stairs
+def climbStairs(n):
+    a, b, c = 1, 1, 0
+
+    if n <= 1:
+        return 1
+    for i in range(2, n + 1):
+        c = a + b
+        a, b = b, c
+    return c
+n=2
+print(climbStairs(n))
