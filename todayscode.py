@@ -126,3 +126,19 @@ def addBinary(a,b):
 a='11'
 b='1'
 print(addBinary(a,b))
+#Sqrt
+def mySqrt(x):
+    y = math.sqrt(x)
+    return (int(y))
+x=4
+print(mySqrt(x))
+#Merge sorted Array
+def merge(nums1,m,nums2,n):
+    nums1[m:] = nums2
+    nums1.sort()
+    return nums1
+nums1=[1,2,3,0,0,0]
+nums2=[2,5,6]
+m=3
+n=3
+print(merge(nums1,m,nums2,n))
