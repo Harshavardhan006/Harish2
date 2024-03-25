@@ -142,3 +142,4 @@ nums2=[2,5,6]
 m=3
 n=3
 print(merge(nums1,m,nums2,n))
+hii
