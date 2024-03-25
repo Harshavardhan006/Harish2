@@ -142,3 +142,9 @@ nums2=[2,5,6]
 m=3
 n=3
 print(merge(nums1,m,nums2,n))
+#Valid Palindrome
+def isPalindrome(s):
+    s = [i for i in s.lower() if i.isalnum()]
+    return s == s[::-1]
+s="race a car"
+print(isPalindrome(s))
