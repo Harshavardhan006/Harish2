@@ -103,3 +103,26 @@ def climbStairs(n):
     return c
 n=2
 print(climbStairs(n))
+#Plus one
+def plusOne(digits):
+    v = ""
+    for i in digits:
+        v += str(i)
+    x = int(v) + 1
+    y = str(x)
+    e = []
+    for i in y:
+        e.append(int(i))
+    return e
+digits=[1,2,3]
+print(plusOne(digits))
+#Add Binary
+def addBinary(a,b):
+    x = int(a, 2)
+    y = int(b, 2)
+    z = x + y
+    q = bin(z)
+    return q[2:]
+a='11'
+b='1'
+print(addBinary(a,b))
