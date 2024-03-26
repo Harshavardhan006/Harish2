@@ -155,5 +155,7 @@ def lengthOfLastWord(s):
     return (len(l))
 s="Hello World"
 print(lengthOfLastWord(s))
+hiiiiiiiii 
+hello 
 
 
