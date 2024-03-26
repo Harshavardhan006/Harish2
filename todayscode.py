@@ -163,3 +163,4 @@ def singleNumber(nums):
     return a
 n=[2,2,1]
 print(singleNumber(n)) 
+
