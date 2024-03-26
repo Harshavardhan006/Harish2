@@ -155,11 +155,4 @@ def lengthOfLastWord(s):
     return (len(l))
 s="Hello World"
 print(lengthOfLastWord(s))
-#Single Number
-def singleNumber(nums):
-    a = 0
-    for i in nums:
-        a = a ^ i
-    return a
-n=[2,2,1]
-print(singleNumber(n)) 
+
