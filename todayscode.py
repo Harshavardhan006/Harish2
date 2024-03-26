@@ -148,3 +148,10 @@ def isPalindrome(s):
     return s == s[::-1]
 s="race a car"
 print(isPalindrome(s))
+#Length of last world
+def lengthOfLastWord(s):
+    x = s.split()
+    l = x[-1]
+    return (len(l))
+s="Hello World"
+print(lengthOfLastWord(s))
