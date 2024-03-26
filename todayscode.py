@@ -166,4 +166,4 @@ def singleNumber(nums):
 n=[2,2,1]
 print(singleNumber(n)) 
 >>>>>>> 59cd0faede70e78c7cb9719098360d2117413938
-
+hiiiii
