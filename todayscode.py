@@ -162,4 +162,4 @@ def singleNumber(nums):
         a = a ^ i
     return a
 n=[2,2,1]
-print(singleNumber(n))
+print(singleNumber(n)) 
