@@ -32,4 +32,15 @@ def canPlaceFlowers(flowerbed, n):
     return a <= 0
 flowerbed=[1,0,0,0,1]
 n=1
-print(canPlaceFlowers(flowerbed,n))
+print(canPlaceFlowers(flowerbed,n)) 
+
+#Greatest common Divisor of Strings:
+from math import gcd
+def gcdOfStrings(str1,str2):
+    if str1 + str2 != str2 + str1:
+        return ""
+    maxlength = gcd(len(str1), len(str2))
+    return str1[:maxlength]
+str1="ABCABC"
+str2="ABC"
+print(gcdOfStrings(str1,str2))
