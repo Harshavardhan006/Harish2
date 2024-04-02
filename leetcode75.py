@@ -62,6 +62,8 @@ def reverseVowels(s):
     return ''.join(s)
 s="hello"
 print(reverseVowels(s)) 
+,,,,
+
 
 
 
