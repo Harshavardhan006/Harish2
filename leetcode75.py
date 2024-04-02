@@ -74,7 +74,7 @@ def findWords(words):
     return list
 words=["Hello","Alaska","Dad","Peace"]
 print(findWords(words)) 
-hiiii  harish
+hiiii  harish jjj
 
 
 
