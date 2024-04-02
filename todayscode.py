@@ -163,6 +163,18 @@ def singleNumber(nums):
         return a
 nums=[2,2,1]
 print(singleNumber(nums))
+#Keyboard Rows
+def findWords(words):
+    list = []
+    s1 = set('qwertyuiop')
+    s2 = set('asdfghjkl')
+    s3 = set('zxcvbnm')
+    for i in words:
+        if set(i.lower()).issubset(s1) or set(i.lower()).issubset(s2) or set(i.lower()).issubset(s3):
+            list.append(i)
+    return list
+words=["Hello","Alaska","Dad","Peace"]
+print(findWords(words))
 
 
 
