@@ -73,8 +73,15 @@ def findWords(words):
             list.append(i)
     return list
 words=["Hello","Alaska","Dad","Peace"]
-print(findWords(words))
-hiiii harish
+print(findWords(words)) 
+hiiii  
+
+
+
+
+
+
+
 
 
 
