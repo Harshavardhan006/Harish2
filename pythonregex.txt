@@ -62,3 +62,34 @@ str3="hello harish"
 result=re.split(" ",str3)
 print(result) output:['hello','harish'] 
 
+import re
+str3='hi harish have a nice day'
+result=re.split(' ',str3,3)
+print(result) output:['hi', 'harish', 'have', 'a nice day']
+
+4.sub method:
+
+Examples:
+import re
+str3='hi harish have a nice day'
+result=re.sub(' ','-',str3)
+print(result) output:hi-harish-have-a-nice-day
+
+import re
+str3='hi harish have a nice day'
+result=re.sub('h','H',str3,2)
+print(result) output:Hi Harish have a nice day
+
+META characters:
+[]-A set of characters,
+\d-digit,
+^-starts with,
+$-ends with,
+.-any character,
+*-zero or more occurences 
++-one or more occurences
+{}-specify the number of occurences 
+
+Special characters:
+\s-Returns a match where the string contains a white space character	 
+\S-Returns a match where the string DOES NOT contain a white space character	
