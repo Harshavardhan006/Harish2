@@ -1,5 +1,5 @@
-Regular Expression:
-methods in regular expression:
+Regular Expression:A Regular Expression (RegEx) is a sequence of characters that defines a search pattern.
+Methods in regular expression:
 findall()- the given string whether matches the given pattern.
 search()-to find the position of given pattern and it should be return in match object.
 match object-Start(),span(),string
