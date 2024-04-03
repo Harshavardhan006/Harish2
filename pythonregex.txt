@@ -1,0 +1,64 @@
+Regular Expression:
+methods in regular expression:
+findall()- the given string whether matches the given pattern.
+search()-to find the position of given pattern and it should be return in match object.
+match object-Start(),span(),string
+split()-used the split the given string.
+sub()-from the given string one character should be replaced by another character.
+
+1.Findall method:
+examples for findall:
+import re 
+str='hi harish'
+result=re.findall('ha',str)
+print(result)
+
+import re
+str1='harishmahes06@gmail.com'
+pattern=re.compile('@')
+result=re.findall(pattern,str1)
+print(result) 
+
+2.Search method: 
+             Start()
+             Span()
+             string
+Examples:
+import re
+str2='hi harish'
+result=re.search('har',str2)
+print(result)  
+#Start()
+import re
+str2='hi harish'
+result=re.search('har',str2)
+print(type(result)) output:3
+print(result.start())- in given pattern starting position index will be noted.
+#span()
+import re
+str2='python'
+result=re.search('python',str2)
+print(result.span())
+output:(0,6)
+#String:
+import re
+str2='python'
+result=re.search('py',str2)
+print(result.string) 
+3.Split method:
+Examples:
+import re
+str3="hello harish"
+result=re.split("hello",str3)
+print(result) output:['','harish']
+
+import re
+str3="hello harish"
+result=re.split("h",str3)
+print(result) output:['','ello','aris','']
+
+import re
+str3="hello harish"
+result=re.split(" ",str3)
+print(result) output:['hello','harish'] 
+
