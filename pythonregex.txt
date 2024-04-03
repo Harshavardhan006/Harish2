@@ -93,3 +93,35 @@ $-ends with,
 Special characters:
 \s-Returns a match where the string contains a white space character	 
 \S-Returns a match where the string DOES NOT contain a white space character	
+\d- string contain digits
+\D- string contain without digits 
+\w- the string contains any word characters (characters from a to Z, digits from 0-9, and the underscore _ character) but not spaces.
+\W-Matches any non-alphanumeric character
+
+
+regular expression problems:
+
+import re
+def validate_phone_number(phonenumber):
+    pattern="^[789]\d{9}$"
+    if re.match(pattern,phonenumber):
+        return True
+    else:
+        return False
+phonenumber=["7639216642","6381543413",'88888888']
+for i in phonenumber:
+    if validate_phone_number(i):
+        print(i,"valid Indian phone number")
+    else:
+        print(i,"not valid Indian phone number")
+#list of mail id is valid or not:
+email id:example@gmail.com 
+import re 
+def validemail(email):
+    pattern=r"^[a-zA-Z0-9.%+-]+@[a-zA-Z]{5}\.[a-z]{2,3}$"
+    return(bool(re.match(pattern,email)))
+email="user@gmail.com"
+if validemail(email):
+    print(email,"valid email id")
+else:
+    print(email,"not valid email id")
