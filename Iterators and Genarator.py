@@ -96,3 +96,12 @@ for i in obj:
 2
 1 
 
+5.def square(n):
+    print('hi')
+    for i in range(n):
+        if i%2==0:
+            yield i**2
+  z=square(6)
+  for i in z:
+    print(i) 
+
