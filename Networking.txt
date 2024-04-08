@@ -98,3 +98,14 @@ cmd:
   It checks whether google.com is reachable from my computer.And sends 4 packets and receives 4 packets means it is existing
 6.tracert www.google.com --it will trace the route how it will reach the google.com like first will reach the default gateway that we see in ipconfig.
   This will show some details like timings, ipaddress from start to end ,end will ip address of google.com 
+Port number for those protocals:
+1.Https-Hypertext Transfer Protocal Secure.port 443
+2.Http- " " " " port 80
+3.SSH -Secure shell port 22 
+4.FTP- File Transfer Protocal port 21 
+5.SMTP-Simple mail transfer Protocal port 25 
+6.SNMP-Simple network management Protocal port 161
+7.DNS-Domain name System  port 53
+8.DHCP-Dynamic host Configuration Protocal port 67 
+9.Telnet-port 23 
+
