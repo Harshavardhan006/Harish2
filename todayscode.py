@@ -194,5 +194,14 @@ def reverseVowels(s):
 s="hello"
 print(reverseVowels(s)) 
 
+#Power of Two
+def isPowerOfTwo(n):
+    if n<0:
+        return False
+    else:
+        return (n&(n-1))==0
+n=1
+print(isPowerOfTwo(n))
+
 
 
