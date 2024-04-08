@@ -203,5 +203,11 @@ def isPowerOfTwo(n):
 n=1
 print(isPowerOfTwo(n))
 
-
-
+#Add Digits
+def addDigits(num):
+    if num == 0:
+        return 0
+    else:
+        return 1 + ((num - 1) % 9)
+num=38
+print(addDigits(num))
