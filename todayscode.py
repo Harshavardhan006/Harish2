@@ -212,6 +212,13 @@ def addDigits(num):
 num=38
 print(addDigits(num))    
 
+#Reverse string:
+def reverseString(s):
+    s.reverse()
+    return s
+s=["h","e","l","l","o"]
+print(reverseString(s))
+
 #Contain Duplicates
 def containsDuplicate(nums):
     nums.sort()
@@ -221,5 +228,6 @@ def containsDuplicate(nums):
             return True
     return False
 nums=[1,2,3,1]
-print(containsDuplicate(nums))
+print(containsDuplicate(nums)) 
+
 
