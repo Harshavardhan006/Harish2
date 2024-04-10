@@ -1,0 +1,71 @@
+Bitwise operator:perform bit by bit operations between value of two operand.
+
+Types:
+& Binary AND
+| Binary OR 
+^ Binary XOR 
+~ Binary Ones Complement
+<< Binary Left shit 
+>> Binary Right Shift
+
+Number System: Decimal base 10 (0-9)
+binary base 2 (0,1)
+octal base 8 (0-7)
+hexadecimal base 16 (0-9,a-f) 
+
+Bitwise AND(&):
+a=12
+b=13
+12=Decimal to binary 00001100
+13=""00001101
+c=a&b 
+00001100&00001101 ans=00001100 binary to decimal =12
+print(c) #output=12 
+
+Bitwise OR(|):
+a=12
+b=13 
+12=Decimal to binary 00001100 
+13=00001101
+c=a|b 
+00001100 | 00001101 ans=00001101 binary to decimal=13 
+print(c) #ouput=13 
+
+Bitwise XOR(^):
+a=20 
+b=4 
+20=00010100
+4=00000100
+a^b
+00010100^00000100 ans=00010000 
+print(c)#output=16
+
+Bitwise NOT (~)
+a=12
+12=Decimal to binary 00001100
+~a=11110011=-13 Negative 
+to find 2's complement the way is 1's complement+1
+13=00001101=1's complement =11110010+1=11110011
+
+Bitwise Left Shift(<<):
+a=10
+a<<2 
+10<<2 x << n 
+x=value 
+n=no of shifts 
+10=decimal to binary=00001010 
+left shift 2=00101000 32+8=40 
+output=40 
+
+
+Bitwise Right Shift(>>):
+a=20 
+a>>2
+20>>2 x>>n 
+x=10 
+n=2 
+10=00001010 
+right shift 2=00000101 4+1 
+output=5
+
+
