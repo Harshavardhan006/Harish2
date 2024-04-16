@@ -242,6 +242,16 @@ def reverseBits(n):
 n="00000010100101000001111010011100"
 print(reverseBits(n))
 
+#Number of 1 bits
+def hammingWeight(n):
+    count = 0
+    while n:
+        count += n % 2
+        n = n >> 1
+    return count
+n=11
+print(hammingWeight(n))
+
 
 
 
