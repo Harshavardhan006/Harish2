@@ -231,3 +231,26 @@ nums=[1,2,3,1]
 print(containsDuplicate(nums)) 
 
 
+#Reverse Bits
+def reverseBits(n):
+    n=int(n,2)
+    res = 0
+    for i in range(32):
+        res = (res << 1)|(n & 1)
+        n >>= 1
+    return res
+n="00000010100101000001111010011100"
+print(reverseBits(n))
+
+
+
+
+
+
+
+
+
+
+
+
+
