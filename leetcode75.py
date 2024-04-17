@@ -74,8 +74,14 @@ def findWords(words):
     return list
 words=["Hello","Alaska","Dad","Peace"]
 print(findWords(words)) 
-hiiii  harish 
 
+#Reverse Words in String
+def reverseWords(s):
+    s=s.strip()
+    s=s.split()
+    return " ".join(s[::-1])
+s="hello World"
+print(reverseWords(s))
 
 
 
