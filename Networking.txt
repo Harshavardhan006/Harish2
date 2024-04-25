@@ -109,3 +109,15 @@ Port number for those protocals:
 8.DHCP-Dynamic host Configuration Protocal port 67 
 9.Telnet-port 23 
 
+
+Networking Devices:
+Repeater,Hub,Switch,Bridge,Router,gateway
+
+1.Repeater:It is a physical Layer device and it regenrates and retransmits the incoming weak signal /data in a single LAN.2port device .It does not amplify signal or increase the signal strength.
+2.Hub:It is a physical Layer device and it is used to connect multiple devices in a single LAN.It broadcasts the received single/data to all ports of the hub
+Two Tyes:Passive hub,Active hub
+3.Switch:It is a data link Layer device and it is used to connect multiple devices in  a single LAN.It examines the destination Mac add to the corresponding device.
+4.Bridge:It is a data link layer and it is used to connect 2 LAN working on a same protocal.It is used to divide large network into smaller segments.It also has Mac add reading capability and also regenrates the weak signal.
+5.Router:It is network layer device and it is used to connect multiple LAN and WAN together working on  same protocal.It needs ip address to forward the data.
+6.Gateway(protocal Convertor):It is used to connect dissimilar networks together working on different set of protocols.Depending on the functionality a gateway can operate at any of the 7 layer of OSI model.
+
