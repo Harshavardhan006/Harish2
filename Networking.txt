@@ -108,6 +108,8 @@ Port number for those protocals:
 7.DNS-Domain name System  port 53
 8.DHCP-Dynamic host Configuration Protocal port 67 
 9.Telnet-port 23 
+10.RDP-Remote Desktop Protocal-3389
+11.Stp-Spanning Tree Protocal-388
 
 
 Networking Devices:
@@ -121,3 +123,47 @@ Two Tyes:Passive hub,Active hub
 5.Router:It is network layer device and it is used to connect multiple LAN and WAN together working on  same protocal.It needs ip address to forward the data.
 6.Gateway(protocal Convertor):It is used to connect dissimilar networks together working on different set of protocols.Depending on the functionality a gateway can operate at any of the 7 layer of OSI model.
 
+
+Internet Protocal Address:
+*It is  a unique address used to identify a device in the Ip Network.
+*2 Version of IP address:IPV4,IPV6
+  IPV4-32 bit address
+  IPV6-128 bit address 
+*2 Types of IP address:
+  Public IP
+  Private Ip
+*Ip address can be divided in to two positions. 
+  Network Porition - It shows the Ip address of which network Porition
+  Host Porition  - from the network it has the multiple host and from that it shows the specific host of Ip address 
+
+IPV4 Address:It is made up of 32 binary bits.
+             32 binary bits are broken in to 4 octets(1 octet =8 bits) and converted into decimals.
+             The value of each octet ranges from 0 to 255 in decimal or binary.
+             Decimal format of IPv4 is 192.68.10.11
+
+
+Subnet-logical subdivision of an IP network or dividing ip network.Advantage of subnetting are  minimizes Broadcasting,Maximizes a Network Performance,secured.
+
+Subnet Mask is a 32 bit number that is used to identify the network Portion and Host Portion in Ip address.
+   1.Network bits as "1"
+   2.Host bits as "0" 
+Last octet  is reserved for specific function "0" indicates as a network address and "255" used to broadcasts.  
+
+Types of Classes:Class A,Class B,Class C,Class D,Class Every
+Class A -Ip ranges from 1.0.0.1 to 126.255.255.255, it supports 16,777,214 hosts on each 126 networks 
+Subnet Mask-255.0.0.0
+Network.Host.Host.Host<100.52.35.12>
+
+Class B-Ip range from 128.0.0.1 to 191.255.255.255 ,it supports 65534 on each 16,382 networks
+Subnet Mask-255.255.0.0 
+Network.Network.Host.Host
+
+Class C-Ip ranges from 192.0.0.1 to 223.255.255.255
+Subnet mask-255.255.255.0
+Network.Network.Network.Host 
+
+Class D-Ip ranges from 224.0.0.1 to 239.255.255.255 
+Reserved for Multicasting 
+
+Class E-Ip ranges from 240.0.0.1 t0 254.255.255.255 
+Reserved for Research and Development purpose
