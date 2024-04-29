@@ -124,6 +124,8 @@ Two Tyes:Passive hub,Active hub
 6.Gateway(protocal Convertor):It is used to connect dissimilar networks together working on different set of protocols.Depending on the functionality a gateway can operate at any of the 7 layer of OSI model.
 
 
+
+
 Internet Protocal Address:
 *It is  a unique address used to identify a device in the Ip Network.
 *2 Version of IP address:IPV4,IPV6
@@ -166,4 +168,37 @@ Class D-Ip ranges from 224.0.0.1 to 239.255.255.255
 Reserved for Multicasting 
 
 Class E-Ip ranges from 240.0.0.1 t0 254.255.255.255 
-Reserved for Research and Development purpose
+Reserved for Research and Development purpose 
+
+
+
+
+Subnet-Division of Large IP Network into multiple small logical networks 
+Two types of subnetting:1.Flsm=Fixed length subnet mask 
+                        2.Vlsm=variable length subnet mask 
+
+FLSM-Fixed Length Subnet mask 
+      The main purpose is dividing the ip address with a same or equal size.
+      Formula 2^n>=N      
+
+
+VLAN-Virtual Local Area Network    
+      Logical Group of devices that having same requirements are put in a single broadcast domain,that appreas working on a same LAN.Even they are in a different geographical locations   
+      It is not restricted to a physical boundaries in a switched network.
+      It can be spread across multiple switches in a Network or even mangaed in a single switch.
+      Vlan ranges from 0 to 4095
+
+      2 types of Ranges-Normal Range Vlan(1 to 1005)
+                        Extended Range Vlan(1006 to 4095)
+      Vlan 1 is known a native or default vlan    
+
+Advantages:Network Broadcast message are minimized and hence network performace  be better.
+           Easy Administration ,Flexible and easy to manage
+           Reduced cost and securied.
+
+
+           
+                 
+
+
+
