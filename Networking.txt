@@ -1,10 +1,10 @@
 Computer network is a set of nodes connected by communications links
 
-Nodes-computer,printer (capable of send/receive data)
+Nodes-computer,printer (capable of send/receive data) devices that are connected to a network
 communication links-wired(ethernet-switch/hub) or wireless links(wifi)
 
 protocol:
-set of rules to communicate
+set of rules to communicate(data transmitted over a network)
 
 Topology:
 Network topology refers to the physical and logical arrangement of nodes on a network. The common network topologies include bus, star, ring, mesh, and tree.
@@ -14,6 +14,9 @@ Every node in the computer network is identified with help of ip address.Routers
 
 Mac address:(physical address)
 Every node in the LAN is identified with help of mac address.switch need mac add to forward data
+DNS-Domain name server is used to translate human readable domain name such as (www.google.com) into ip address that computer can understand.
+Firewall-Firewall is a security device that is used to monitor and control the incoming and outgoing 
+ network traffic.It is used to protect network from unauthorized access and other network threats
 
 Port address:
 Every process in a node is uniquely identified using port numbers.
@@ -21,6 +24,13 @@ In a node many processess will be running,data which are sent/received must reac
 
 Switching:
 It helps in deciding the best route for data transmission if there ia multiple paths in a larger network.One to one connection
+
+Types of Computer Network architecture:
+1.Cilent-Server Architecture:Nodes can be server or cilents.Server node can manage the cilent node behaviour.
+2.Peer-to-Peer Architecture:Each devices is free for working as either cilent or server
+
+
+
 
 Layering:
 means decomposing the problem into more manageable components(layers)
@@ -194,11 +204,29 @@ VLAN-Virtual Local Area Network
 
 Advantages:Network Broadcast message are minimized and hence network performace  be better.
            Easy Administration ,Flexible and easy to manage
-           Reduced cost and securied.
+           Reduced cost and securied. 
 
 
-           
-                 
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
