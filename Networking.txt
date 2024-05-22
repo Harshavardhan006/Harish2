@@ -108,6 +108,7 @@ cmd:
   It checks whether google.com is reachable from my computer.And sends 4 packets and receives 4 packets means it is existing
 6.tracert www.google.com --it will trace the route how it will reach the google.com like first will reach the default gateway that we see in ipconfig.
   This will show some details like timings, ipaddress from start to end ,end will ip address of google.com 
+Port number:It is a communication endpoint from which data transmission are sent or received.      
 Port number for those protocals:
 1.Https-Hypertext Transfer Protocal Secure.port 443
 2.Http- " " " " port 80
@@ -133,11 +134,95 @@ Two Tyes:Passive hub,Active hub
 5.Router:It is network layer device and it is used to connect multiple LAN and WAN together working on  same protocal.It needs ip address to forward the data.
 6.Gateway(protocal Convertor):It is used to connect dissimilar networks together working on different set of protocols.Depending on the functionality a gateway can operate at any of the 7 layer of OSI model.
 
+Classification of Computer Networks:
+1.Local Area networks 
+2.Metropolitan Area networks 
+3.Wide Area networks 
+
+Local Area Network:
+Computer networks that  interconnects computer within in a limited area such as school,lab 
+we can setup lan within two ways:
+1.Wired LAN(example:Ethernet -HUB,Switch)Ethernetis used to connect two Or more nodes
+2.Wireless LAN(Example :Wi-Fi)
+
+
+Metropolitan Area Network:
+Computer network that interconnects users with computer resources in ageographic region of size 
+MAN-Devices:
+Switches and Hubs
+Routers and Bridges 
+  
+Wide Area Network:
+It is a telecommunications network that extends over the large geographical area for the primary purpose of computer networking
+WAN-Devices
+End devices and intermediary devices 
+
+
+Topology :
+Arrangement of nodes of a computer network.Topology means layout 
+
+Physical topology:Placement of various nodes 
+Logical topology:deals with the data flow in the network 
+
+Various Network topology:
+Bus 
+Ring 
+Star
+Mesh 
+Hybrid 
+
+Bus topology:
+            All data transmitted between nodes in the network is transmitterd over the common transmission medium and it will be received by all nodes simultaneously.Data can be flow in both direction.
+            Advantages:Only one wire -less expensive 
+                       Suited for temporary network
+                       Node failure does not affect other node 
+            Disadvantage:not fault tolerant 
+                         Limited cable length 
+                         no security 
+
+Ring Topology:
+             A ring topology is a bus topology in a closed loop 
+             peer to peer lan topology
+             Every node will have two connection one to each of its nearest  neighbors 
+             communication is always unidirectional 
+             sending and receviving data takes place with the help of a token 
+
+             Advantage: It has better performac ethan bus topology
+                        All node with equal access 
+             Disadvantage:Unidirectional single point of failure will affect the whole network 
+
+Star Topology:
+             Every node is connected to a central node called hub or switch 
+             Centralized Management 
+             All traffic must pass through the hub or switch 
+
+             Adavnatge:
+                      Easy to design and implement 
+                      Centralized adminstration 
+                      Scalable 
+            Disadvantage:Single point failure will affect the whole network 
+                         due to overloades switch or hub 
+                         Increased cost due to switch or hub  
+
+
+
+Extented star topology:
+               Two or more star topology is connected with the help of repeater 
+
+Mesh Topology:
+             Each node is directely connected to everyother nodess in the network 
+             Fault tolerance and reliable 
+
+        
+
+
 
 
 
 Internet Protocal Address:
-*It is  a unique address used to identify a device in the Ip Network.
+*It is  a unique address and every node in the computer network is identified with help of Ip address.
+IP are logical address because we can the change the ip based on location of device.we can assign manually or dynamically. 
+0.0.0.0 to 255.255.255.255
 *2 Version of IP address:IPV4,IPV6
   IPV4-32 bit address
   IPV6-128 bit address 
@@ -153,6 +238,41 @@ IPV4 Address:It is made up of 32 binary bits.
              The value of each octet ranges from 0 to 255 in decimal or binary.
              Decimal format of IPv4 is 192.68.10.11
 
+MAC address:
+           MAC stands for Media Access Control  
+           Every node in LAN is identified with the help of MAC Address 
+           IP address+location of a person 
+           MAC address+Name of the person 
+           mac address are unique throughout the world.
+           Mac address 48 bits represented in hexadecimal  
+
+Port address or Port number:
+          In a node many process will be running.
+          Data which are sent/receive must reach the right process 
+          Every process in a node is uniquely identified using port numbers 
+          Port=Communication endpoint
+          Fixed port number and dynamic port number (0 - 65535)     
+          resmon we tell what are the port number are running  
+
+Switching :Computer network helps in deciding the best route for data transmissin because there are multiple paths in a larger network. one to one connection
+Switchin techniques:
+                   Circuit Switching
+                   Message switching 
+                   Packet switching 
+In Packet switching we have two approach:1.Datagram approach 
+                                         2.Virtual circuit approach 
+
+Circuit Switching:
+                 A dedicated path is established between sender and receiver.
+                 Before data transfer ,connection will be established first 
+                 Example:Telephone network 
+3 phases in circuit switching:
+                 1.Connection establishment 
+                 2.Data transfer 
+                 3.Connection disconnection 
+
+Message switching:
+                 If a sender want to send a big data and this big data cannot  transfered into single streath and big data will be broken into single utility and each of peicies transmitted to intermediary node   
 
 Subnet-logical subdivision of an IP network or dividing ip network.Advantage of subnetting are  minimizes Broadcasting,Maximizes a Network Performance,secured.
 
@@ -204,7 +324,26 @@ VLAN-Virtual Local Area Network
 
 Advantages:Network Broadcast message are minimized and hence network performace  be better.
            Easy Administration ,Flexible and easy to manage
-           Reduced cost and securied. 
+           Reduced cost and securied.   
+
+
+
+  
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
 
 
 
