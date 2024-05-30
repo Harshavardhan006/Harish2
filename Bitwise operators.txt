@@ -66,6 +66,7 @@ x=10
 n=2 
 10=00001010 
 right shift 2=00000101 4+1 
-output=5
+output=5 
+
 
 

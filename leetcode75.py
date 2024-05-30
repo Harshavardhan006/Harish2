@@ -82,7 +82,10 @@ def reverseWords(s):
     return " ".join(s[::-1])
 s="hello World"
 print(reverseWords(s))
+ 
 
+
+ 
 
 
 

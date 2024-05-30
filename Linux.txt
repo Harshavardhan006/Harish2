@@ -1,0 +1,184 @@
+Linux is a Operating System such as like windows,mac.
+
+Unix-1970 (Bell Labs) mainly it is developed for multi user purpose and multi tasking. Unix was developed by Sun Microsystem.Unix supports only fewer file system.
+Linux-1991 was found by Linus Torvalds.Linux is almost free because it is an open source software.Linux used by Developer community,Companies(Redhat,debian,CentOs)
+Linux used by ATM machine,Smart Application,Home Application.
+
+Uses of Virtual Box:It runs multiple Operating System in one Hardware.
+
+Virtual Machine-Imaginary Computer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cloud computing:
+
+AWS-200 Fully featured services 
+
+Infrastructure:
+Server,storage,security,Database,network and application-6 Engineering those expert in all 6 engs they were called as solution architecture
+
+Storage Engineering(Ec2):
+
+ON-PREMISES =Buying/Depolying and Managing -Always manual and need more man-effort
+             Chances of human error is high 
+             to overcome this Ec2 was given by AWS Ec2-creating one computer over the internet in specific region
+
+CLOUD PREMISES:
+Regions:23 Active + 4 on progress Regions
+Availabity Zones :77Az's 
+
+EC2:Resizable Elastic cloud Computing(Elastic cloud computing)
+END Goal:  Makes Developer job Easy...Avoids unneccesary wastage of Time in set up
+Benefits:Cost Effective ,High Availabity,Easier&Faster,Resizable&Elastic
+
+AWS MANAGEMENT CONSOLE CREATION:
+Pricing -Free-tier Eligible
+
+
+EC2 CREATION:
+1.o/s(AMI-Amazon Machine Image) - windows,amazon,linux,ubuntu,suse,Redhat
+2.H/W's(Instance type)-VCPU & Memory -t2.micro it has virtual cpu and ram =1 gb
+  family -general purpose,memory optimization ,storage optimized,compute optimized
+3.configuration:n/w,subnet,ip,bootstrap 
+4.storage-ebs(elastic block store)upto 100 ebs can have ,1 ebs max capacity-16tb;via supports
+5.tags-name the server
+6.security group-(0-65535) source:0.0.0.0/0(public)
+7.key pair generation -pem(privacy enhanced mail)Encrypted, private key
+                       ppk(putty private key file)-decrypted ,public key
+8.launch instances       
+
+PRE-REQUISITES:
+PUTTY-Login into linux
+PUTTYGEN-IT converts PEM to ppk
+
+Experiment1:Create Window machine login using(user name and pwd)
+RDP-Remote Desktop protocal- Default Protocal of Window 3389(port number)
+INITALIZING=1/2 INSTALLAtion +1/2 Configuration=2/2 checks passed
+public ip of window machine
+user name:To login first you should choose the machine after that click that connect  from that we can see RDP client we can the see user name
+password:get password
+Experiment 2:Create  Amazon Linux machine login using (user name and pwd(ppk))
+SSH-secure shell -Default protocal of Linux 22(port number)
+public ip address of linux
+user name:To login first you should choose the machine after that click that connect  from that we can see SSH client we can the see user name
+password:puttygen it is used to convert pem to ppk        
+
+
+EC2 advance:
+Ip address is static or Dynamic:Dynamic  Because everytime while restart your computer the ip address will be change.
+
+Elastic IP Address:
+Add Drive
+Modify Drive
+Snapshot
+Linux commands --->add/Modify
+Volume types
+
+
+Elastic IP address and add drive:
+
+In network and security we can see Elastic Ip from that you  can click allocate Elastic Ip address .Aws will be allocate an unique IP address 
+
+In Elastic IP address click Action we can see Associate Elastic IP Address after that we should associate for those machine.
+
+per account per region only 5 Ip's
+Modify Drive:(min 1gb to max 16384gb)
+
+In Elastic block store,click Volume we can see all the machine drive from that choose which drive to modify .click on action button from that we can the modify volume.after that it will be changed.here it will be changed but in remote it does not change how can we access.
+
+
+Snapshot:
+It is nothing but backup of  your harddisk. how to back up simply go to the volume click action from that Create Snapshot(Meaning:I had back up this harddisk) and give the name for those creation 
+In snapshots we can see what we have back up.
+Storage will be 30 gb 
+
+
+
+Created the instances(windows) with two harddisk. one had disk as os and another one is 5gb.
+5 gb harddisk were back up.It is not attached with any machine.
+
+
+
+
+
+Linux in aws:
+Commands:
+df -h:use to view the file system 
+lsblk:view the attached drives  
+sudo mkfs -t ext4 
+mkdir
+mount
+resize2fs   
+
+
+
+EC2 Web Hosting:
+
+1.AMI
+2.RAM,CPU,NETWORK SPEED
+3.NETWORK Configuration
+4.STORAGE 30GB-EBS(elastic block store)
+5.add tag 
+
+
+
+Middleware-web server ,app server 
+
+Webserver: Static application hosting 
+apache-Linux
+ITS-Internet Information Service (Microsoft Product) so window  
+
+APP Server :Dynamic Application hosting  compulsory should have database storage 
+
+ 
+ Application Engg-Depoly
+ Deploy -installation,enhancement,update
+ v1
+ v1.1
+ v1.2
+ v2
+
+know we going to install web server 
+In Windows ,we should click sever manager
+Add roles and features
+we should go to server roles after that click web sever (IAS) then install 
+
+In Linux we going to install web server:
+

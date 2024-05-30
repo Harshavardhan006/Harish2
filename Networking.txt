@@ -147,7 +147,7 @@ we can setup lan within two ways:
 
 
 Metropolitan Area Network:
-Computer network that interconnects users with computer resources in ageographic region of size 
+Computer network that interconnects users with computer resources in a geographic region of size 
 MAN-Devices:
 Switches and Hubs
 Routers and Bridges 
@@ -213,9 +213,6 @@ Mesh Topology:
              Each node is directely connected to everyother nodess in the network 
              Fault tolerance and reliable 
 
-        
-
-
 
 
 
@@ -255,7 +252,7 @@ Port address or Port number:
           resmon we tell what are the port number are running  
 
 Switching :Computer network helps in deciding the best route for data transmissin because there are multiple paths in a larger network. one to one connection
-Switchin techniques:
+Switching techniques:
                    Circuit Switching
                    Message switching 
                    Packet switching 
@@ -272,10 +269,49 @@ Circuit Switching:
                  3.Connection disconnection 
 
 Message switching:
-                 If a sender want to send a big data and this big data cannot  transfered into single streath and big data will be broken into single utility and each of peicies transmitted to intermediary node   
+                 If a sender want to send a big data and this big data cannot  transfered into single streath and big data will be broken into single utility and each of peicies transmitted to intermediary node and then Intermediary node gets all the receive peices and constructed the full message and getting the complete unit then only it forwards the data.
+
+
+Packet Switching:
+                The internet is a packet switched network.
+                Message is broken into individual chunks called as packets.
+                Each packet is sent individually.
+                Each packet will have source and destination ip address with sequence number.
+                Sequence number will help the receiver to Reorder the packets,Detect missing packets and send acknowledgement 
+Two approaches to packet switching:
+1.Datagram approach
+2.Virtual Circuit approach 
+
+Datagram approach:
+                Datagram packet switching is also known as connectionless switching.
+                Each independent entiy is called as datagram 
+                Datagram contain destination information and intermediary devices used this information to forward datagrams to right destination.
+                The path is not Fixed
+                Intermediate nodes take the routing decision to forward the packets.
+
+Virtual Circuit Approach:
+                Virtual circuit switching is also known as connection oriented switching.
+                A preplanned route is established before the message are sent.
+                call request and call accept packets are used to establish the connection between  sender and receiver.
+                The path is fixed for duration of a logical connection. 
+                
+TCP/Ip Model:
+Fours layers plays a major role in TCp\Ip Model:
+Application layer:Dealing with the user Represents the data to the user ,plus encoding and dialog  control.Simply functionality of application layer,Presentation layer and session layer are combined to the single layer called application layer.
+Transport layer:Supports communication between the diverse devices across the diverse network.
+Internet Layer :the best path through the network
+Network Access :It controls the hardware devices and media that make up the network.           
+
+Tcp/IP Protocal suite:
+Application layer:Name system(DNS),Host Config(BOOTP,DHCP),Email(SMTP,POP,IMAP),File Transfer(FTP,TFTP),Web(HTTP)
+Transport Layer:Widely used protocals are UDP(Userdatagram protocal) and TCP(Transmission control protocal)
+Internet layer:Routing protocal comes under internet layer.Router is a devices that works in network.
+Network Access has protocals like ppp(point to point protocal) ,Ethernet is popular for LAN technologies to  be presise wired technologies and there are many interface drives that work on this network access.
+
+
+
 
 Subnet-logical subdivision of an IP network or dividing ip network.Advantage of subnetting are  minimizes Broadcasting,Maximizes a Network Performance,secured.
-
 Subnet Mask is a 32 bit number that is used to identify the network Portion and Host Portion in Ip address.
    1.Network bits as "1"
    2.Host bits as "0" 
@@ -295,10 +331,12 @@ Subnet mask-255.255.255.0
 Network.Network.Network.Host 
 
 Class D-Ip ranges from 224.0.0.1 to 239.255.255.255 
+
+
 Reserved for Multicasting 
 
 Class E-Ip ranges from 240.0.0.1 t0 254.255.255.255 
-Reserved for Research and Development purpose 
+Reserved for Research and Development purpose         
 
 
 
@@ -323,8 +361,44 @@ VLAN-Virtual Local Area Network
       Vlan 1 is known a native or default vlan    
 
 Advantages:Network Broadcast message are minimized and hence network performace  be better.
-           Easy Administration ,Flexible and easy to manage
-           Reduced cost and securied.   
+           Easy Administration,Flexible and easy to manage
+           Reduced cost and securied.  
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+        
+           
+      
+
+
+
+
+
+
+
+
 
 
 
