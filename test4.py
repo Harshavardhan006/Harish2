@@ -8,7 +8,7 @@ nums=[2,7,11,15]
 target=9
 print(twoSum(nums,target)) 
 
-oops vs procedural 
+'''oops vs procedural 
 
 OOPS-Object Oriented Programming System 1.It will deal with Object only
                                         2.It can be easily maintain 
@@ -149,7 +149,8 @@ plane1=plane("emirates","ed07")
 
 for x in (car1,boat1,plane1):
     print(x.brand)
-    x.move()  
+    x.move()  '''
+
 
 
 

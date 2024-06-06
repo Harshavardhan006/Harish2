@@ -250,7 +250,7 @@ def hammingWeight(n):
         n = n >> 1
     return count
 n=11
-print(hammingWeight(n)) ....
+print(hammingWeight(n)) 
 
 
 

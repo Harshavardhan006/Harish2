@@ -1,0 +1,228 @@
+Iterators-with help of  iter method to create sequences of iterators. whole object will be stored in memory at same time and then with help of next method it will be iterate one by one.
+    
+Generators-with help of yield keyword and function to create generator object.It will produce large sequence  at a time.Generators mainly used in memory optimization because it will iterate sequence of code.
+Examples:
+
+1.list1=[1,2,3,4]
+print(iter(list1)) #<list_iterator object at 0x00000226A7451600>
+
+2.list1=[1,2,3,'python']
+x=iter(list1)
+print(next(x))
+print(next(x))
+print(next(x))
+print(next(x))
+
+#output:
+1
+2
+3
+python
+
+
+3.a=[10,20,30,40,50]
+b=iter(a)
+
+while(b):
+    try:
+        print(next(b))
+    except StopIteration:
+        print("no more values")
+        break
+
+
+
+4.class ten():
+    def __init__(self):
+        self.num=1
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.num<=10:
+            value=self.num
+            self.num+=1
+            return value
+        else:
+            raise StopIteration
+obj=ten()
+for i in obj:
+    print(i)
+
+
+example for generators:
+
+1.def num():
+    yield 5
+print(num()) #output:<generator object num at 0x00000200A25F9D20> - generators object because we used yield keywords it denotes generators object.
+
+
+2.def num():
+    yield 5
+obj=num()
+print(obj.__next__()) #output:5
+
+3.def num():
+    yield 5
+    yield 4
+    yield 3
+    yield 2
+    yield 1
+
+obj=num()
+print(next(obj))#output:5
+print(next(obj))#output:4
+print(next(obj))#output:3
+print(next(obj))#output:2
+print(next(obj))#output:1 
+print(next(obj))#Error:Stop Iteration 
+
+
+4.def num():
+    yield 5
+    yield 4
+    yield 3
+    yield 2
+    yield 1
+
+obj=num()
+print(obj)#
+for i in obj:
+    print(i)
+#output:
+<generator object num at 0x000001AF03719E80>
+5
+4
+3
+2
+1 
+
+5.def square(n):
+    print('hi')
+    for i in range(n):
+        if i%2==0:
+            yield i**2
+  z=square(6) 
+  for i in z:
+    print(i) 
+    
+
+
+Basic List methods:
+1.remove(item)
+2.pop(index)
+3.clear()
+4.append(item)
+5.Index(element)
+6.extend(lst)
+7.insert(index,element)
+8.count(element)
+9.reverse()
+10.sort()ascending=lst.sort(reverse=True)descending
+11.copy()
+
+Basic TUples:(tuple are immutable by nature)
+create a tuple:
+tup=()#emptytuple
+
+#Accessing tuple:
+1.Indexing-Postive,negative 
+2.Slicing-displaying the value by the given range[start:end:step]
+
+#deletion or modification:
+we can delete the entire tuple we can't delete single tuple element
+
+#concatenation=>+
+#replication=>*
+
+methodes in tuple:
+1.count(element)
+2.index(element) 
+
+
+Sets:
+Set is a  unordered collection of data.
+
+set={},mutable by nature 
+list and tuple will allow the duplicate values but sets it will allow unquie value.
+
+Creation of sets:
+myset={1,2,3}
+#empty set=myset=set()
+
+#accessing set:
+1.indexing-not possible 
+2.slicing-not possible 
+
+#Basic operation inset:
+1.add(element)
+2.update(set)
+3.remove(element)#if element to be removed is not present throws key Error
+4.discard(element)
+5.pop()=1st element in set will be removed 
+6.min()
+7.max()
+8.sum()
+9.len() 
+
+#Set operations:
+1.issubset() s1<=s2 
+2.issuperset() s1>=s2 
+3.union()s1|s2 
+4.intersection() s1&s2 
+5.difference()s1-s2 
+6.symmertic difference()s1^s2
+
+Dictionary:
+
+#multiple element 
+Dictionary={}
+mydict={key1:value1,key2:value2}#mapping 
+
+#create:
+mydict-{}#empty dictonary 
+
+mydict['name']='harish' 
+#output:{'name':'harish'}
+
+
+mydict1={'name':'harish,'age':'23'}
+
+mydict2=dict()
+mydict2=dict(name:'harish',age:'23')
+
+
+mydict3=dict([(1,'harish'),(2,'naveen')])
+
+
+#Comprehension:
+expression 
+iteration 
+condition 
+
+dict={expression iteration condition}
+#{0:0,1:1,2:4}
+mydct4={x:x*2 for x in range(5)} 
+
+
+#accessing dictonary
+items
+keys 
+values  
+
+
+Bulit-in-Methods:
+1.copy()
+2.clear()
+3.update(dict)
+#deletion
+4.pop(k,v)#optional
+5.popitem()
+#retrival
+6.get(k)
+7.keys()
+8.values()
+9.items()
+10.fromkeys(tuple,value)
+11.setdefault(k,v) 
+
+fgfgjg
