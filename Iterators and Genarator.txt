@@ -225,4 +225,116 @@ Bulit-in-Methods:
 10.fromkeys(tuple,value)
 11.setdefault(k,v) 
 
-fgfgjg
+sum=lambda x,y:x+y 
+print("sum=",sum(2,3))
+
+square=lambda x:x**2 
+print("square:",square(2)) 
+
+def square(n):
+return n**2 
+res=square(2)
+print(res)
+
+def square(n):
+return n**2 
+
+lst=[1,2,3,4,5]
+res=[]
+for i in lst:
+res.append(square(i))
+print(res)
+
+#Map:
+def square(n):
+return n**2 
+
+lst=[1,2,3,4,5]
+res=map(square,lst)
+print(res)
+
+#Map using lambda:
+lst=[1,2,3,4,5]
+res=list(map(lambda x:x**2,lst))
+print(res)
+
+
+#display even no:
+for i in range(1,11):
+if i%2==0:
+print(i)
+#Filter function:
+x=list(filter(lambda i:i%2==0,range(1,11)))
+print(x)
+
+#Reduce function:
+import functools
+lst=[1,2,3,4]
+sum=functools.reduce(lambda x,y:x+y,lst)
+print(sum) 
+
+
+#List Comprehension:
+z=[x for x in range(1,11)]
+print(z) 
+square:
+z=[x**2 for x in range(1,11)]
+print(z) 
+odd no:
+z=[x for x in range(1,11) if x%2==1]
+print(z)
+even no:
+z=[x for x in range(1,11) if x%2==0]
+print(z)
+
+
+[T-exp if condition else F-exp for item in iterable]
+z=[x if x>2 else x+1 for x in range(1,11)]
+print(z)
+
+z=[x**2 if x%2==0 else x for x in range(1,11)]
+print(z)
+
+z=[x**2 if x%2==0 else x**3 for x in range(1,11)]
+print(z)
+
+lst=[1,2,3,4,5]
+z=[x*2 for x in lst]
+print(z) 
+
+name="harish06"
+z=[x for x in name if x.isalpha()]
+print(z)
+
+
+name="harish06"
+z=[x for x in name if x.isdigit()]
+print(z)
+
+
+lst=['apple','orange','grapes']
+z=[x.upper() for x in lst]
+print(z)
+
+lst=[[1,2,3],['a','b','c'],['harish','naveen']]
+z=[x[0] for x in lst] 
+
+lst=[1,2,3]
+lst1=[4,5,6]
+z=[x+y for x in lst for y in lst1]
+print(z)
+
+l1=[1,2,3]
+l2=[4,5,6]
+z=[l1[i]+l2[i] for i in range(len(l1))]
+print(z) 
+
+#OOPS(Objects oriented Programming language )
+
+class Computer:
+     def config(self):
+         print("i5,16gb,1TB")
+com1=Computer()
+print(com1)         
+
+
