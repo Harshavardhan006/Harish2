@@ -362,9 +362,22 @@ VLAN-Virtual Local Area Network
 
 Advantages:Network Broadcast message are minimized and hence network performace  be better.
            Easy Administration,Flexible and easy to manage
-           Reduced cost and securied.  
+           Reduced cost and securied.   
 
-          
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
 
 
 
