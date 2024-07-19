@@ -362,9 +362,31 @@ VLAN-Virtual Local Area Network
 
 Advantages:Network Broadcast message are minimized and hence network performace  be better.
            Easy Administration,Flexible and easy to manage
-           Reduced cost and securied.   
+           Reduced cost and securied.  
 
 
+
+
+FTP-File transfer Protocal enables file sharing between hosts ,both local and remote and runs on the top of TCP.
+It creates two TCP connection they are control and data connection 
+The control connection is used to transfer control information like password,commands and to retrieve the stored files.
+In data connection is used to transfer the actual files
+Both of these connections run in parallel during the entire file process process
+FTP port number -21 
+
+Types of FTP Connection:
+Active connection:
+                 Cilent establish the command channel and server establish the data channel 
+                 when client request the data and server initated the data transfer 
+                 if there is a firewall inbetween the cilent and server ,it may cause problems
+                 it is not a default connection 
+
+Passive connection:
+                  cilent establish the data channel & command channel 
+                  When client request the data the server sends the random port number 
+                  when the client receives the port numbers it establish the data channel 
+                  It works better even after the client is protected by firewall
+                  It is a default connection
 
 
 
@@ -376,7 +398,6 @@ Advantages:Network Broadcast message are minimized and hence network performace 
 
 
  
-
 
 
 
@@ -415,7 +436,7 @@ Advantages:Network Broadcast message are minimized and hence network performace 
 
 
 
-  
+   
 
 
 
