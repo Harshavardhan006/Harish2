@@ -8,6 +8,51 @@ Uses of Virtual Box:It runs multiple Operating System in one Hardware.
 
 Virtual Machine-Imaginary Computer
 
+basic linux commands:
+cal 
+whoami
+who 
+halt 
+shutdown 
+reboot 
+
+Linux file Management commands:
+Types:
+Normal files
+directories 
+Special files 
+
+pwd-location 
+ls-list of files and folders 
+ls -l detailly shows files and folders 
+ls -a hidden files  
+
+vi - In vi we have two mode 
+1.edit mode 
+2.escape mode  
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
