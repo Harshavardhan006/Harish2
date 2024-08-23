@@ -389,9 +389,32 @@ Passive connection:
                   It is a default connection
 
 
+DHCP:Dynamic Host Configuration protocals 
+
+
+        It is network management protocals used on Ip networks 
+        DHCP server dynamically assigns the ip  address and other network configuration parameters to each device on the network 
+        They can easily communicate with other ip networks. 
+        
+
+
+IEEE 802.11 wi-fi wireless fidelity: 
+
+Fidelity (lasting support)   
 
 
 
+ 
+
+
+
+
+ 
+
+
+
+
+  
 
 
 
