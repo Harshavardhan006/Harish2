@@ -403,13 +403,56 @@ IEEE 802.11 wi-fi wireless fidelity:
 Fidelity (lasting support)   
 
 
+In Ip  address we should note 6 main point:
+1.Version
+2.Structure 
+3.range
+4.size
+5.subnet 
+6.class 
 
+Private Ip address:
+
+Unicast
+Multicast 
+Broadcast 
+
+wifi-network 
+network id-192.168.29.0 [first ip]
+broadcast id-192.168.29.255[last ip]
+router default ip-[192.168.29.1]  
+
+Private IP address:
+2^32=4,294,967,296[Apx :4.3 billion]
+
+private ip address range:
+Class      From          To
+class A   10.0.0.0       10.255.255.255  
+class B   172.16.0.0     172.31.255.255 
+class c   192.168.0.0    192.168.255.255 
+
+
+TCP and Ip protocals:
+ The full form of Tcp and Ip protocals is transmission Control protocal and internet protocal.It has four layer model.
+They are Application layer,Transport layer,Internet layer,Host to network.
+
+TCP and Ip protocals works:
+    It carried the information on the internet in the form of packets.The Ip protocal is used to put message in the form of packets.Each packets has the address of sender and receiver.These address are known as Ip address.
+    Using TCP and IP protocals,we divide single large message into sequence of packets.
+    These message are passed into one network to another network until they reach the destination.
+    At the destination TCP software reassembles the packets into complete message.
  
 
+Network Address Translation:
 
+1.Private IP Address to Public Ip Address 
+2.Public IP Address to Private IP Address 
 
-
- 
+There are 4 methods to follow:
+1.Static Nat 
+2.Dynamic Nat 
+3.Port Address Translation 
+4.Port Forwarding 
 
 
 
